@@ -1,6 +1,6 @@
 ## VMK365 Hardware Designs
 
-The VMK365  hardware designs target the following paths:
+The VMK365 hardware designs target the following paths:
 
 - **VMK365_hdmi_single**:<br>
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx<br>
