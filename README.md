@@ -7,14 +7,19 @@ The VMK365  hardware designs target the following paths:
 - **VMK365_hdmi_single**:<br>
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx<br>
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Vmixer -> HDMI Tx
-- **VMK365_hdmi_brcstr**: HDMI Rx -> Scaler -> AXI Broadcaster -> Frmbuf Wr -> DDR -> Frmbuf Rd -> Vmixer -> HDMI Tx
 - **VMK365_hdmi_single_PMOD**: Loopback Design to test the PMOD interfaces.
+- **VMK365_hdmi_single_pcie_reg_space**: PCIE-EP Design.
+- **VMK365_hdmi_brcstr**: HDMI Rx -> Scaler -> AXI Broadcaster -> Frmbuf Wr -> DDR -> Frmbuf Rd -> Vmixer -> HDMI Tx
 - **vmk365_sdi0_rxtx**: SDI Rx0 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx0
 - **vmk365_sdi1_rxtx**: SDI Rx1 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx1
 - **vmk365_sdi2_rxtx**: SDI Rx2 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx2
 - **vmk365_sdi3_rxtx**: SDI Rx3 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx3
-- **vmk365_hdmitx_sdi4rx**: 4 SDI Rx interfaces -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx	
-
+- **vmk365_hdmitx_sdi4rx**: 4 SDI Rx interfaces -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx
+- **vmk365_hdmirxtx_sdi0rxtx**:<br>
+	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx<br> (via 10G ethernet)
+	SDI Rx0 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx0 (via 10G ethernet)
+- **vmk365_48G_SDI**:
+  
 ### Vivado Tool Version
 - **Vivado™ 2026.2**
 
