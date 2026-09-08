@@ -34,10 +34,10 @@ This section describes the steps required to build the hardware designs.
    This opens up the GUI and recreates the block design.
 4. Click on Generate Bitstream. This starts the runs.
 5. Hack the PDIs.
-        ```bash
-		cd .../*.runs/impl_1/gen_files/ 
-		vi lpd_data.cdo
-		```
+    ```bash
+	cd .../*.runs/impl_1/gen_files/ 
+	vi lpd_data.cdo
+	```
 Under the Boot Up Procedure, Add the following lines:
 	```bash
 	# pm_init_node(POWER_LPD, 0)
