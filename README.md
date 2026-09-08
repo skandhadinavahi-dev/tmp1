@@ -13,7 +13,7 @@ The VMK365  hardware designs target the following paths:
 - **vmk365_sdi1_rxtx**: SDI Rx1 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx1
 - **vmk365_sdi2_rxtx**: SDI Rx2 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx2
 - **vmk365_sdi3_rxtx**: SDI Rx3 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx3
-- **vmk365_hdmitx_sdi4rx**: All 4 SDI Rx interfaces -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx	
+- **vmk365_hdmitx_sdi4rx**: 4 SDI Rx interfaces -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx	
 
 ### Vivado Tool Version
 - **Vivado™ 2026.2**
@@ -35,9 +35,9 @@ This section describes the steps required to build the hardware designs.
 4. Click on Generate Bitstream. This starts the runs.
 5. Hack the PDIs.
         ```bash
-	cd .../*.runs/impl_1/gen_files/ 
-	vi lpd_data.cdo
-	```
+		cd .../*.runs/impl_1/gen_files/ 
+		vi lpd_data.cdo
+		```
 Under the Boot Up Procedure, Add the following lines:
 	```bash
 	# pm_init_node(POWER_LPD, 0)
