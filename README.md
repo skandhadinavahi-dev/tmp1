@@ -38,14 +38,14 @@ This section describes the steps required to build the hardware designs.
 	cd .../*.runs/impl_1/gen_files/ 
 	vi lpd_data.cdo
 	```
-Under the Boot Up Procedure, Add the following lines.
+   Under the Boot Up Procedure, Add the following lines.
 	```bash
 	# pm_init_node(POWER_LPD, 0)
 	log_string "HC Disabled"
 	write 0xF2014170 0xFF2FF7FF
 	write 0xF2014174 0xF7FFFFF7
 	```
-Save the file and comeback to the impl_1 folder. Run the following command to generate the PDIs again.
+   Save the file and comeback to the impl_1 folder. Run the following command to generate the PDIs again.
 	```bash
 	/proj/primebuilds/HEAD_PRIME_daily_latest/installs/lin64/HEAD/Vivado/bin/bootgen -arch versal_2ve_2vm -padimageheader=0 -log trace -image design_1_wrapper_boot.bif  -w -o design_1_wrapper_boot.pdi
 	```
