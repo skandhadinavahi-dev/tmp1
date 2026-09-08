@@ -19,6 +19,7 @@ The VMK365  hardware designs target the following paths:
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx<br> (via 10G ethernet)
 	SDI Rx0 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx0 (via 10G ethernet)
 - **vmk365_48G_SDI**:
+- **vmk365_ibert_204_205**: Design to check the SFP and QSFP banks via loopback.
   
 ### Vivado Tool Version
 - **Vivado™ 2026.2**
