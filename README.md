@@ -1,5 +1,3 @@
-# tmp1 
-
 ## VMK365 Hardware Designs
 
 The VMK365  hardware designs target the following paths:
