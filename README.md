@@ -8,7 +8,7 @@ The VMK365  hardware designs target the following paths:
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> Vmixer -> HDMI Tx<br>
 	HDMI Rx -> Scaler -> Frmbuf Wr -> DDR -> Vmixer -> HDMI Tx
 - **VMK365_hdmi_single_PMOD**: Loopback Design to test the PMOD interfaces.
-- **VMK365_hdmi_single_pcie_reg_space**: PCIE-EP Design.
+- **VMK365_hdmi_single_pcie_reg_space**: PS PCIE-EP Design.
 - **VMK365_hdmi_brcstr**: HDMI Rx -> Scaler -> AXI Broadcaster -> Frmbuf Wr -> DDR -> Frmbuf Rd -> Vmixer -> HDMI Tx
 - **vmk365_sdi0_rxtx**: SDI Rx0 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx0
 - **vmk365_sdi1_rxtx**: SDI Rx1 -> Scaler -> Frmbuf Wr -> DDR -> Frmbuf Rd-> SDI Tx1
