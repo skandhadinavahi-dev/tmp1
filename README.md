@@ -38,7 +38,7 @@ This section describes the steps required to build the hardware designs.
 	cd .../*.runs/impl_1/gen_files/ 
 	vi lpd_data.cdo
 	```
-Under the Boot Up Procedure, Add the following lines:
+Under the Boot Up Procedure, Add the following lines.
 	```bash
 	# pm_init_node(POWER_LPD, 0)
 	log_string "HC Disabled"
