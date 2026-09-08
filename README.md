@@ -25,7 +25,7 @@ This section describes the steps required to build the hardware designs.
 1. Navigate to the design folder that you want to recreate.
 2. Source the vivado tool.
 	```bash
-	   source /proj/primebuilds/2026.2_PRIME_0609_1/installs/lin64/9999.0/Vivado/settings64.csh
+	source /proj/primebuilds/2026.2_PRIME_0609_1/installs/lin64/9999.0/Vivado/settings64.csh
 	```   
 3. Run the following command.
 	```bash
